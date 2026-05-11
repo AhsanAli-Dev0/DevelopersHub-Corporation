@@ -1,0 +1,297 @@
+@import "tailwindcss";
+
+:root {
+  --background: #DEE2E7;
+  --white: #ffffff;
+  --dark: #1C1C1C;
+  --gray-500: #8B96A5;
+  --gray-600: #505050;
+  --blue-primary: #0D6EFD;
+  --font-family: var(--font-inter), sans-serif;
+}
+
+/* Global Reset Adjustments */
+body {
+  background-color: #F7FAFC; /* Light gray background for the whole page */
+}
+
+p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 1rem; /* 16px */
+  line-height: 1.5;
+  color: var(--gray-600);
+}
+
+h1, h2, h3, h4, h5, h6, span {
+  font-family: var(--font-family);
+  line-height: 1.2;
+}
+
+/* ****************************************************************** */
+/* Hero section */
+/* ****************************************************************** */
+.hero-section {
+  border-radius: 6px;
+  border: 1px solid var(--background);
+  padding: 1.25rem; /* 20px */
+  background: var(--white);
+}
+
+.hero-section ul li {
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--gray-600);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.hero-section ul li:first-child {
+  background: #E5F1FF;
+  color: var(--dark);
+}
+
+.hero-section ul li:hover:not(:first-child) {
+  background: #f0f0f0;
+}
+
+.hero-title {
+  padding: 3rem 2.5rem; /* Balanced Padding */
+}
+
+.hero-section .hero-title h1 {
+  font-size: 1.75rem; /* 28px */
+  font-weight: 400;
+}
+
+.hero-section .hero-title h2 {
+  font-weight: 700;
+  font-size: 2rem; /* 32px */
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title button {
+  background: var(--white);
+  min-width: 120px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid var(--background);
+  padding: 0 1rem;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Sidebar Profile & Cards */
+.hero-section .user-profile {
+  background: #E3F0FF;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.hero-section .user-profile button {
+  width: 100%;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.hero-section .discount, .hero-section .quirey {
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 0.75rem;
+  color: var(--white);
+}
+
+.hero-section .discount { background: #F38332; }
+.hero-section .quirey { background: #55BDC3; }
+
+@media screen and (max-width:920px){
+  
+}
+
+/* ****************************************************************** */
+/* Deals Section */
+/* ****************************************************************** */
+.deals-section {
+  border: 1px solid #E0E0E0;
+  background: var(--white);
+}
+
+.deals-section .title h2 {
+  font-weight: 600;
+  font-size: 1.25rem; /* 20px */
+  letter-spacing: -0.2px;
+}
+
+.deals-section .time-box {
+  background: #606060;
+  color: var(--white);
+  width: 45px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.deals-section .card {
+  padding: 1.25rem;
+  border-right: 1px solid #E0E0E0;
+  text-align: center;
+}
+
+.deals-section .card .text h3 {
+  font-size: 1rem;
+  margin-top: 0.75rem;
+}
+
+.deals-section .card .discount span {
+  color: #EB001B;
+  background: #FFE3E3;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* ****************************************************************** */
+/* Grid Item Sections (Home/Tech) */
+/* ****************************************************************** */
+.initail-wrapper .content-wrraper h4, 
+.tec-wrapper .content-wrraper h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1.25rem;
+}
+
+.product-info h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.5rem 1rem 0.25rem 1rem;
+}
+
+.product-info p {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  padding: 0 1rem 1rem 1rem;
+}
+
+/* ****************************************************************** */
+/* Form Section */
+/* ****************************************************************** */
+.form .col-span-7 h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.form .contact {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form input, .form textarea, .form select {
+  width: 100%;
+  border: 1px solid #DEE2E7;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.form .form-button {
+  background: linear-gradient(180deg, #127FFF 0%, #0067FF 100%);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+/* ****************************************************************** */
+/* Recommended Section */
+/* ****************************************************************** */
+.recommended-section .title {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.recommended-section .card-item {
+  background: var(--white);
+  border: 1px solid var(--background);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* ****************************************************************** */
+/* Header & Search */
+/* ****************************************************************** */
+header form {
+  display: flex;
+  border: 2px solid var(--blue-primary);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+}
+
+header #search {
+  flex-grow: 1;
+  padding: 0.6rem 1rem;
+  outline: none;
+}
+
+header #select {
+  border-left: 1px solid var(--blue-primary);
+  padding: 0 1rem;
+  color: var(--dark);
+  background: transparent;
+}
+
+header form button {
+  background: var(--blue-primary);
+  color: var(--white);
+  padding: 0 1.5rem;
+  font-weight: 500;
+}
+
+/* ****************************************************************** */
+/* Footer */
+/* ****************************************************************** */
+footer {
+  background: var(--white);
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--background);
+}
+
+footer .footer-des p {
+  max-width: 280px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--gray-600);
+}
+
+footer ul li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+  color: var(--gray-500);
+}
+
+footer ul li b {
+  color: var(--dark);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+footer .copy-write-wrraper {
+  background: #EFF2F4;
+  padding: 1.25rem 0;
+  margin-top: 2.5rem;
+}
